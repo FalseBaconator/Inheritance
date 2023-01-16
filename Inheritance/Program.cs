@@ -10,6 +10,20 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            
+            Player player = new Player(10, "FalseBacon");
+            Enemy enemy = new Enemy(10, "Enemy");
+
+            player.ShowStats();
+            player.TakeDMG(5);
+            player.ShowStats();
+
+            enemy.ShowStats();
+            enemy.TakeDMG(11);
+            enemy.ShowStats();
+
+            Console.ReadKey(true);
+
         }
     }
 }
